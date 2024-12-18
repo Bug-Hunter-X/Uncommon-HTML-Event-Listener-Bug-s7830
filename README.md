@@ -1,0 +1,2 @@
+# Uncommon HTML Event Listener Bug
+This repository demonstrates a subtle bug related to adding event listeners to dynamically created HTML elements. The bug occurs because the event listener is attached *before* the element is added to the DOM.  This can lead to unexpected behavior. The solution showcases the correct way to handle this scenario.
