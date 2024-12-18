@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    //Incorrect way to add eventListener to dynamically created element
+    let div = document.createElement('div');
+    div.id = 'newDiv';
+    div.addEventListener('click', function(){
+      alert('This will not work');
+    });
+    document.getElementById('myDiv').appendChild(div);
+  </script>
+</body>
+</html>
